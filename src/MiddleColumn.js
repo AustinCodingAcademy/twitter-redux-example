@@ -4,7 +4,7 @@ import Tweets from "./Tweets";
 
 
 function MiddleColumn(props){
-  return <div><Tweets tweets={props.tweets}/></div>
+  return <div><Tweets/></div>
 }
 
 export default MiddleColumn;
