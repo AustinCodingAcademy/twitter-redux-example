@@ -8,8 +8,8 @@ import './style.css';
 function  App(props) {
     return (
       <div>
-          <AddTweet />
-          <MiddleColumn />
+          <AddTweet addTheTweet={props.addTheTweet} />
+          <MiddleColumn tweets={props.tweets}/>
       </div>
     );
   

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {addTweet} from "./actions";
-import { connect } from 'react-redux';
+
 
 
 class AddTweet extends Component{
@@ -21,12 +20,4 @@ class AddTweet extends Component{
   }
 }
 
-function mapDispatchToProps(dispatch){
- return {
-   addTheTweet:function(tweet){
-     var action = addTweet(tweet);
-     dispatch(action);
-   }
- }
-}
-export default connect(null,mapDispatchToProps)(AddTweet);
+export default (AddTweet);
